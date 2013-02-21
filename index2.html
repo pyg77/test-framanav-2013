@@ -14,7 +14,7 @@
 
     <!-- Le javascript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Placed at the top of document. Slower, but easier -->
     <script src="./bootstrap/js/jquery.min.js"></script>
     <script src="./bootstrap/js/bootstrap.js"></script>
 
@@ -28,9 +28,9 @@
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../bootstrap/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../bootstrap/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../bootstrap/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../bootstrap/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../bootstrap/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../bootstrap/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../bootstrap/ico/favicon.png">
   </head>
 
   <body>
@@ -45,10 +45,21 @@
     		<a href="http://soutenir.framasoft.org" id="framanav_donation" rel="donBadge">Faire un don</a>
             <div class="navbar navbar-fixed-top" id="framanav">
               <div class="navbar-inner">
+				  
+				<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+				  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </a>
+				  
                 <div class="framanav_container">
 
+
+
+
                   <a class="brand" href="http://framasoft.org"><img src="./framanav/img/manchot.png" class="dd_icon"/> <span style="color: #6b6bb5;">Frama</span><span style="color: #FF8103;">soft</span></a>
-                  <div class=""> <!-- anciennement div class="nav-collapse" -->
+                  <div class="nav-collapse collapse"> <!-- anciennement div class="nav-collapse" -->
                     <ul class="nav">
 
                       <li class="dropdown">
@@ -118,7 +129,7 @@
 	            </form> 
 	            <script src="http://www.google.com/coop/cse/brand?form=searchbox_017931506014566040656%3Aiqp-lrqbqlu&amp;lang=fr" type="text/javascript"></script>
 
-
+				 <!-- automatiquement refermé en cas de petit écran -->
                     <ul class="nav pull-right">
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="./framanav/img/contact.png" class="dd_icon"/>Nous suivre</a>
@@ -134,13 +145,13 @@
                       </li>
 
 	              	
-			<li class="divider-vertical"></li>
+					<li class="divider-vertical"></li>
 	              	<li><a href="http://soutenir.framasoft.org" style="font-weight:bold">Soutenir <span style="color: #6b6bb5;">Frama</span><span style="color: #FF8103;">soft</span></a></li>
                     </ul>
+				<!-- /automatiquement refermé en cas de petit écran -->
 
 
-
-                  </div><!-- /.nav-collapse -->
+                  </div>
                 </div>
               </div><!-- /navbar-inner -->
             </div><!-- /navbar -->
